@@ -1,3 +1,4 @@
+import os
 from setuptools import setup, find_packages
 
 
@@ -33,10 +34,15 @@ install_requires = [
 
 tests_require = []
 
+with open(os.path.join(os.path.dirname(__file__), 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
-    name="friend_trader",
-    version="0.1.0",
+    name="starknet-simple-deploy",
+    version="0.1.1",
     description="Starknet Simple Deploy",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     author="Web3Technologies LLC",
     author_email="zach@web3technologies.io",
     install_requires=install_requires,
@@ -48,4 +54,8 @@ setup(
         "test": tests_require,
     },
     package_dir={"":"src"},
+    project_urls={
+        "Source Code": "https://github.com/web3technologies/starknet_simple_deploy",
+        "Issue Tracker": "https://github.com/web3technologies/starknet_simple_deploy/issues",
+    }
 )
