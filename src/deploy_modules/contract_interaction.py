@@ -38,11 +38,3 @@ class Erc20Contract(ContractInteration):
         (balance,) = await self.contract.functions["balanceOf"].call(contract_kwargs.get("recipient"))
         print(f"new balance {balance}")
         return invocation
-
-
-class CounterContract(ContractInteration):
-    ...
-
-
-class FractionContract(ContractInteration):
-    ...
