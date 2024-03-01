@@ -39,7 +39,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md'), encoding='utf-8'
 
 setup(
     name="starknet-simple-deploy",
-    version="0.1.0",
+    version="0.1.1",
     description="Starknet Simple Deploy",
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -54,4 +54,8 @@ setup(
         "test": tests_require,
     },
     package_dir={"":"src"},
+    project_urls={
+        "Source Code": "https://github.com/web3technologies/starknet_simple_deploy",
+        "Issue Tracker": "https://github.com/web3technologies/starknet_simple_deploy/issues",
+    }
 )
