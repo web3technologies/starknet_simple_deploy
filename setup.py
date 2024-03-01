@@ -39,7 +39,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md'), encoding='utf-8'
 
 setup(
     name="starknet-simple-deploy",
-    version="0.1.1",
+    version="0.1.2",
     description="Starknet Simple Deploy",
     long_description=long_description,
     long_description_content_type='text/markdown',
