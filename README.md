@@ -24,6 +24,19 @@ pip install starknet-simple-deploy
 Here's a quick example to get you started with deploying a StarkNet smart contract:
 
 ```
+
+from starknet_simple_deploy import (
+    DeclareContract,
+    DeployContract, 
+    DeployerConfig, 
+    ContractDataWriter, 
+    InitializeContractData,
+
+)
+from starknet_simple_deploy.utils import get_abi
+
+
+deployer_config = DeployerConfig.get_config(deploy_env, chain).init_account()
 initialized_contract = InitializeContractData(contract_name="MyContract")
 casm_class_hash, compiled_contract, sierra_class_hash = initialized_contract.read_contract_file_data()
 declared_contract = DeclareContract(
