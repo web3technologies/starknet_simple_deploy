@@ -16,14 +16,14 @@ Starknet Simple Deploy is a Python package designed to simplify the process of d
 
 To install Starknet Simple Deploy, run the following command in your terminal:
 
-```bash
+```
 pip install starknet-simple-deploy
-
+```
 ## Quick Start
 
 Here's a quick example to get you started with deploying a StarkNet smart contract:
 
-```python
+```
 initialized_contract = InitializeContractData(contract_name="MyContract")
 casm_class_hash, compiled_contract, sierra_class_hash = initialized_contract.read_contract_file_data()
 declared_contract = DeclareContract(
