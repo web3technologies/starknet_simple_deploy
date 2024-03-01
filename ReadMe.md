@@ -8,7 +8,7 @@ Starknet Simple Deploy is a Python package designed to simplify the process of d
 
 - **Simplified Deployment**: Decalre and Deploy StarkNet smart contracts with minimal setup and configuration.
 - **Configurable**: Supports custom deployment configurations through `DeployerConfig`.
-- **WRite Deployment Data**: Supports ability to write data to a json file. 
+- **Write Deployment Data**: Supports ability to write data to a json file throug `ContractDataWriter`. 
 - **Async Support**: Fully asynchronous API for efficient contract deployment.
 - **Error Handling**: Designed to gracefully handle deployment errors and provide clear feedback.
 
